@@ -5,11 +5,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
 <script src="./p5.play.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/9.7.0/firebase-database.js"> </script>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC8KFI5CTRPN7YXUruVv5GtwPduDUmtYow",
+    authDomain: "c33-ball.firebaseapp.com",
+    databaseURL: "https://c33-ball-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "c33-ball",
+    storageBucket: "c33-ball.appspot.com",
+    messagingSenderId: "182412205480",
+    appId: "1:182412205480:web:1b3afad7df02a18934d19d",
+    measurementId: "G-7N7DCCV0LG"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 
   </head>
   <body>
       <script src="sketch.js"></script>
+
+
+
   </body>
+
+
+  
 </html>
